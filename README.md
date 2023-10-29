@@ -21,16 +21,15 @@ The user will input the number of pieces (integer) and the price per piece exclu
 ```
 Účtenka
 Cena bez DPH/ks 200 Kč<tab>Cena s DPH/ks 240 Kč
-Počet kusů: 5<tab>Cena bez DPH 1000 Kč<tab>Cena s DPH (20 %)
-1400 Kč
+Počet kusů: 5<tab>Cena bez DPH 1000 Kč<tab>Cena s DPH (20 %) 1400 Kč
 ```
 
 **Translated Output Example**:
 
 ```
 Receipt
-Price without VAT/pc: 200 CZK<tab>Price with VAT/pc: 240 CZK
-Number of pieces: 5<tab>Price without VAT: 1000 CZK<tab>Price with VAT (20%): 1400 CZK
+Price without VAT/pc 200 CZK<tab>Price with VAT/pc 240 CZK
+Number of pieces: 5<tab>Price without VAT 1000 CZK<tab>Price with VAT (20%) 1400 CZK
 ```
 
 ---
@@ -49,7 +48,7 @@ Use an appropriate constant variable in the program and set its value.
 
 ```
 Známky: z1<tab>z2<z3><tab>z4<tab>z5
-průměrná hodnota zaokrouhlená na dvě desetinná místa
+[Průměrná hodnota zaokrouhlená na dvě desetinná místa]
 Prospěl s vyznamenáním: {1:Ano/0:Ne}
 Prospěl: {1:Ano/0:Ne}
 Neprospěl: {1:Ano/0:Ne}
@@ -58,8 +57,8 @@ Neprospěl: {1:Ano/0:Ne}
 **Translated Output Example**:
 
 ```
-Marks: z1    z2    z3    z4    z5
-Average: [value rounded to two decimal places]
+Marks: z1<tab>z2<z3><tab>z4<tab>z5
+[Average value rounded to two decimal places]
 Pass with distinction: {1:Yes/0:No}
 Passed: {1:Yes/0:No}
 Fail: {1:Yes/0:No}
@@ -87,7 +86,7 @@ Celkem: 5 x 24.9 = 124.5 Kč Zaokrouhleno: 125 Kč
 ```
 1 GBP = 24.9 CZK
 Purchase: 5 GBP
-Total: 5 x 24.9 = 124.5 CZK    Rounded: 125 CZK
+Total: 5 x 24.9 = 124.5 CZK Rounded: 125 CZK
 ```
 
 ## Evaluation
