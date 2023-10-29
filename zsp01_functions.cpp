@@ -19,7 +19,7 @@
 #include <string.h>
 
 /**
- * @brief Function for Task U1.1.
+ * @brief Function for Task u1.1.
  *
  * Task 1 (u1_1)
  * Calculate purchase price (with and without VAT) based on user input.
@@ -54,9 +54,70 @@ void u1_1()
     printf("Počet kusů: %d\tCena bez DPH %d Kč\tCena s DPH (20 %%) %d Kč\n", count, price * count, price_w_vat * count);
 }
 
+/**
+ * @brief Function for Task u1.2.
+ *
+ * Task 2 (u1_2)
+ * User inputs 5 grades.
+ * Calculate average and grade status (pass with distinction, pass, fail).
+ * Output: Display marks, average, and grade status.
+ *
+ * @return nothing
+ */
 void u1_2()
 {
-    // todo u1-2
+    const int BEST_GRADE = 1;
+    const int WORST_GRADE = 5;
+    const double PASS_BORDER = 4.00;
+    const double DISTINCTION_BORDER = 1.50;
+
+    int grades[5] = {0, 0, 0, 0, 0};
+    scanf("%d %d %d %d %d", &grades[0], &grades[1], &grades[2], &grades[3], &grades[4]);
+
+    printf("Známky: %d\t%d\t%d\t%d\t%d\n", grades[0], grades[1], grades[2], grades[3], grades[4]);
+
+    double average_grade = 0;
+    for (int i = 0; i < 5; i++)
+    {
+        average_grade += grades[i];
+    }
+    average_grade /= 5;
+    printf("%.2f\n", average_grade);
+
+    if (average_grade < BEST_GRADE && average_grade > WORST_GRADE)
+    {
+        printf("ERROR\n");
+    }
+
+    printf("Prospěl s vyznamenáním: ");
+    if (average_grade >= BEST_GRADE && average_grade <= DISTINCTION_BORDER)
+    {
+        printf("1:Ano\n");
+    }
+    else
+    {
+        printf("0:Ne\n");
+    }
+
+    printf("Prospěl: ");
+    if (average_grade >= BEST_GRADE && average_grade <= PASS_BORDER)
+    {
+        printf("1:Ano\n");
+    }
+    else
+    {
+        printf("0:Ne\n");
+    }
+
+    printf("Neprospěl: ");
+    if (average_grade > PASS_BORDER && average_grade <= WORST_GRADE)
+    {
+        printf("1:Ano\n");
+    }
+    else
+    {
+        printf("0:Ne\n");
+    }
 }
 
 void u1_3()
