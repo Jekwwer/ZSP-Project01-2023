@@ -1,8 +1,20 @@
-﻿// ZSP_Ukol-1.cpp : Tento soubor obsahuje funkci main. Provádění programu se tam
-// zahajuje a ukončuje.
-//
+﻿/**
+ * @file zsp01_functions.cpp
+ * @brief Implementation for ZSP VŠPJ 1st Homework Assignment.
+ *
+ * This source file contains the implementation of functions and methods required
+ * to complete the 1st homework assignment in the ZSP VŠPJ (Fundamentals of Structural Programming) course.
+ * 
+ * This file is NOT part of the submitted solution.
+ * It's meant only for debugging and testing purposes.
+ *
+ * @see https://github.com/Jekwwer/ZSP-Homework01-2023
+ *
+ * @author Evgenii Shiliaev
+ * @date October 29, 2023
+ */
 
-#include <iostream>
+#include "zsp01_functions.h"
 
 void u1_1()
 {
@@ -19,21 +31,4 @@ void u1_3()
     // todo u1-3
 }
 
-int main()
-{
-    ;
-}
-
-// Spuštění programu: Ctrl+F5 nebo nabídka Ladit > Spustit bez ladění
-// Ladění programu: F5 nebo nabídka Ladit > Spustit ladění
-
-// Tipy pro zahájení práce:
-//   1. K přidání nebo správě souborů použijte okno Průzkumník řešení.
-//   2. Pro připojení ke správě zdrojového kódu použijte okno Team Explorer.
-//   3. K zobrazení výstupu sestavení a dalších zpráv použijte okno Výstup.
-//   4. K zobrazení chyb použijte okno Seznam chyb.
-//   5. Pokud chcete vytvořit nové soubory kódu, přejděte na Projekt > Přidat
-//   novou položku. Pokud chcete přidat do projektu existující soubory kódu,
-//   přejděte na Projekt > Přidat existující položku.
-//   6. Pokud budete chtít v budoucnu znovu otevřít tento projekt, přejděte na
-//   Soubor > Otevřít > Projekt a vyberte příslušný soubor .sln.
+/** End of zsp01_functions.cpp */
