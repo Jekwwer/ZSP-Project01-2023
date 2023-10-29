@@ -27,7 +27,7 @@
  */
 int main()
 {
-    // todo main
+    u1_1();
 }
 
 /** End of main.cpp */
