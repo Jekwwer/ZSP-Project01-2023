@@ -5,7 +5,7 @@
  * This file contains the main function and serves as the entry point for the application.
  * A part of my solution to the 1st homework assignment
  * in the ZSP VŠPJ (Fundamentals of Structural Programming) course.
- * 
+ *
  * This file is NOT part of the submitted solution.
  * It's meant only for debugging and testing purposes.
  *
@@ -27,7 +27,10 @@
  */
 int main()
 {
-    u1_1();
+    printf("Evgenii Shiliaev\nshilia01\n29.10.2023\n");
+    u1_1(); // Task 01
+    u1_2(); // Task 02
+    u1_3(); // Task 03
 }
 
 /** End of main.cpp */
