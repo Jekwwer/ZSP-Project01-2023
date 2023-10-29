@@ -361,6 +361,79 @@ TEST(U1_2Tests, JustFailed)
     ASSERT_EQ(expectedOutput, actualOutput);
 }
 
+// Tests for u1_3
+TEST(U1_3Tests, TestCurrencyExchangeGBP)
+{
+    std::string input = "GBP 24.9 5\n";
+    std::string expectedOutput = "1 GBP = 24.9 Kč\nNákup: 5 GBP\nCelkem: 5 x 24.9 = 124.5 Kč Zaokrouhleno: 125 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeEUR)
+{
+    std::string input = "EUR 26.3 3\n";
+    std::string expectedOutput = "1 EUR = 26.3 Kč\nNákup: 3 EUR\nCelkem: 3 x 26.3 = 78.9 Kč Zaokrouhleno: 79 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeUSD)
+{
+    std::string input = "USD 21.8 7\n";
+    std::string expectedOutput = "1 USD = 21.8 Kč\nNákup: 7 USD\nCelkem: 7 x 21.8 = 152.6 Kč Zaokrouhleno: 153 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeRoundDown1)
+{
+    std::string input = "GBP 24.1 4\n";
+    std::string expectedOutput = "1 GBP = 24.1 Kč\nNákup: 4 GBP\nCelkem: 4 x 24.1 = 96.4 Kč Zaokrouhleno: 96 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeRoundDown2)
+{
+    std::string input = "EUR 26.2 2\n";
+    std::string expectedOutput = "1 EUR = 26.2 Kč\nNákup: 2 EUR\nCelkem: 2 x 26.2 = 52.4 Kč Zaokrouhleno: 52 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeRoundDown3)
+{
+    std::string input = "USD 21.4 3\n";
+    std::string expectedOutput = "1 USD = 21.4 Kč\nNákup: 3 USD\nCelkem: 3 x 21.4 = 64.2 Kč Zaokrouhleno: 64 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestCurrencyExchangeWithZeroAmount)
+{
+    std::string input = "JPY 0.2 0\n";
+    std::string expectedOutput = "1 JPY = 0.2 Kč\nNákup: 0 JPY\nCelkem: 0 x 0.2 = 0.0 Kč Zaokrouhleno: 0 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_3Tests, TestZeroCurrencyRate)
+{
+    std::string input = "JPY 0 5\n";
+    std::string expectedOutput = "1 JPY = 0.0 Kč\nNákup: 5 JPY\nCelkem: 5 x 0.0 = 0.0 Kč Zaokrouhleno: 0 Kč\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_3);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
 // ... Add more test cases as necessary ...
 
 int main(int argc, char **argv)
