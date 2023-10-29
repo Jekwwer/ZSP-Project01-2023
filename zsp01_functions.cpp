@@ -15,8 +15,6 @@
  */
 
 #include "zsp01_functions.h"
-#include <stdio.h>
-#include <string.h>
 
 /**
  * @brief Function for Task u1.1.
