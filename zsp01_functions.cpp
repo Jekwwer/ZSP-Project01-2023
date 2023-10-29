@@ -42,11 +42,11 @@ void u1_1()
 
     if (price * VAT - (int)(price * VAT) >= 0.5)
     {
-        price_w_vat = (int)price * VAT + 1;
+        price_w_vat = (int)(price * VAT) + 1;
     }
     else
     {
-        price_w_vat = (int)price * VAT;
+        price_w_vat = (int)(price * VAT);
     }
 
     printf("Účtenka\n");
