@@ -120,9 +120,37 @@ void u1_2()
     }
 }
 
+/**
+ * @brief Function for Task u1.3.
+ *
+ * Task 3 (u1_3)
+ * User inputs currency abbreviation, rate in CZK, and quantity.
+ * Calculate foreign currency's CZK value.
+ * Output: Display conversion rate, purchase amount, and total in CZK (rounded).
+ *
+ * @return nothing
+ */
 void u1_3()
 {
-    // todo u1-3
+    char currency_name[256] = {0}; // Initialize the array with zeros
+    double currency_value = 0;
+    int count = 0;
+    scanf("%s %lf %d", currency_name, &currency_value, &count);
+
+    int rounded_result = 0;
+    if (currency_value * count - (int)(currency_value * count) >= 0.5)
+    {
+        rounded_result = (int)(currency_value * count) + 1;
+    }
+    else
+    {
+        rounded_result = (int)(currency_value * count);
+    }
+
+    printf("1 %s = %.1f Kč\n", currency_name, currency_value);
+    printf("Nákup: %d %s\n", count, currency_name);
+    printf("Celkem: %d x %.1f = %.1f Kč Zaokrouhleno: %d Kč\n", count, currency_value, count * currency_value,
+           rounded_result);
 }
 
 /** End of zsp01_functions.cpp */
