@@ -290,6 +290,77 @@ TEST(U1_1Tests, TestItem_101_Price_43)
     ASSERT_EQ(expectedOutput, actualOutput);
 }
 
+// Tests for u1_2
+TEST(U1_2Tests, TestPerfectScores)
+{
+    std::string input = "1 1 1 1 1";
+    std::string expectedOutput =
+        "Známky: 1\t1\t1\t1\t1\n1.00\nProspěl s vyznamenáním: 1:Ano\nProspěl: 1:Ano\nNeprospěl: 0:Ne\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, TestScoresDistinction)
+{
+    std::string input = "1 2 1 2 1";
+    std::string expectedOutput =
+        "Známky: 1\t2\t1\t2\t1\n1.40\nProspěl s vyznamenáním: 1:Ano\nProspěl: 1:Ano\nNeprospěl: 0:Ne\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, TestFailingScores)
+{
+    std::string input = "5 5 5 5 5";
+    std::string expectedOutput =
+        "Známky: 5\t5\t5\t5\t5\n5.00\nProspěl s vyznamenáním: 0:Ne\nProspěl: 0:Ne\nNeprospěl: 1:Ano\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, TestPassScores01)
+{
+    std::string input = "1 2 2 2 2";
+    std::string expectedOutput =
+        "Známky: 1\t2\t2\t2\t2\n1.80\nProspěl s vyznamenáním: 0:Ne\nProspěl: 1:Ano\nNeprospěl: 0:Ne\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, TestPassScores02)
+{
+    std::string input = "3 4 4 4 4";
+    std::string expectedOutput =
+        "Známky: 3\t4\t4\t4\t4\n3.80\nProspěl s vyznamenáním: 0:Ne\nProspěl: 1:Ano\nNeprospěl: 0:Ne\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, JustPassed)
+{
+    std::string input = "4 4 4 4 4";
+    std::string expectedOutput =
+        "Známky: 4\t4\t4\t4\t4\n4.00\nProspěl s vyznamenáním: 0:Ne\nProspěl: 1:Ano\nNeprospěl: 0:Ne\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
+TEST(U1_2Tests, JustFailed)
+{
+    std::string input = "4 4 4 4 5";
+    std::string expectedOutput =
+        "Známky: 4\t4\t4\t4\t5\n4.20\nProspěl s vyznamenáním: 0:Ne\nProspěl: 0:Ne\nNeprospěl: 1:Ano\n";
+    std::string actualOutput;
+    runTestWithInputForFunction(input, actualOutput, u1_2);
+    ASSERT_EQ(expectedOutput, actualOutput);
+}
+
 // ... Add more test cases as necessary ...
 
 int main(int argc, char **argv)
