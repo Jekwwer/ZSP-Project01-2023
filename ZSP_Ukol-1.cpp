@@ -5,7 +5,7 @@
  * This source file contains the implementation of functions and methods required
  * to complete the 1st homework assignment in the ZSP VŠPJ (Fundamentals of Structural Programming) course.
  *
- * @see https://github.com/Jekwwer/ZSP-Homework01-2023
+ * @see https://github.com/Jekwwer/ZSP-Project01-2023
  *
  * @author Evgenii Shiliaev
  * @date October 29, 2023

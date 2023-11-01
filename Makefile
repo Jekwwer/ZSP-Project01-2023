@@ -1,5 +1,5 @@
 # Project: 		ZSP-Homework01-2023
-# Project Link: https://github.com/Jekwwer/ZSP-Homework01-2023
+# Project Link: https://github.com/Jekwwer/ZSP-Project01-2023
 # Author:  		Evgenii Shiliaev
 # Date:    		29.10.2023
 

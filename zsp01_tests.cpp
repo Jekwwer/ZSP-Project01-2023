@@ -1,6 +1,11 @@
 /**
  * @file zsp01_tests.cpp
  * @brief This file contains all the unit tests for ZSP Tasks functionalities.
+ * 
+ * This file is NOT part of the submitted solution.
+ * It's meant only for debugging and testing purposes.
+ *
+ * @see https://github.com/Jekwwer/ZSP-Project01-2023
  *
  * @author Evgenii Shiliaev
  * @date 29.10.2023

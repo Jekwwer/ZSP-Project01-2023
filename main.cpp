@@ -9,7 +9,7 @@
  * This file is NOT part of the submitted solution.
  * It's meant only for debugging and testing purposes.
  *
- * @see https://github.com/Jekwwer/ZSP-Homework01-2023
+ * @see https://github.com/Jekwwer/ZSP-Project01-2023
  *
  * @author Evgenii Shiliaev
  * @date October 29, 2023
