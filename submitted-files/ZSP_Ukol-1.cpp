@@ -5,6 +5,8 @@
  * This source file contains the implementation of functions and methods required
  * to complete the 1st homework assignment in the ZSP VŠPJ (Fundamentals of Structural Programming) course.
  *
+ * It is a comprehensive file functionally equivalent to the structured solution.
+ *
  * @see https://github.com/Jekwwer/ZSP-Project01-2023
  *
  * @author Evgenii Shiliaev
@@ -153,8 +155,6 @@ void u1_3()
  *
  * This function initializes the application,
  * and performs the primary logic of the program.
- *
- * @return nothing
  */
 int main()
 {

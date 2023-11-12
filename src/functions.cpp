@@ -1,5 +1,5 @@
 ﻿/**
- * @file zsp01_functions.cpp
+ * @file functions.cpp
  * @brief Implementation for ZSP VŠPJ 1st Homework Assignment.
  *
  * This source file contains the implementation of functions and methods required
@@ -14,7 +14,7 @@
  * @date October 29, 2023
  */
 
-#include "zsp01_functions.h"
+#include "functions.h"
 
 /**
  * @brief Function for Task u1.1.

@@ -1,7 +1,7 @@
 /**
- * @file zsp01_tests.cpp
+ * @file tests.cpp
  * @brief This file contains all the unit tests for ZSP Tasks functionalities.
- * 
+ *
  * This file is NOT part of the submitted solution.
  * It's meant only for debugging and testing purposes.
  *
@@ -11,7 +11,7 @@
  * @date 29.10.2023
  */
 
-#include "zsp01_functions.h"
+#include "functions.h"
 #include <cstdio>
 #include <gtest/gtest.h>
 #include <sstream>

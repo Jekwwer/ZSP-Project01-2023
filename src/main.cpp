@@ -15,7 +15,7 @@
  * @date October 29, 2023
  */
 
-#include "zsp01_functions.h"
+#include "functions.h"
 
 /**
  * @brief Main function of the application.

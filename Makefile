@@ -1,43 +1,62 @@
-# Project: 		ZSP-Homework01-2023
-# Project Link: https://github.com/Jekwwer/ZSP-Project01-2023
-# Author:  		Evgenii Shiliaev
-# Date:    		29.10.2023
+# Project:       ZSP-Project01-2023
+# Project Link:  https://github.com/Jekwwer/ZSP-Project02-2023
+# Author:        Evgenii Shiliaev
+# Date:          12.11.2023
 
-# Compiler
+# Compiler settings - Can be customized.
 CXX = g++
+CXXFLAGS = -std=c++11 -Wall -Isrc/headers
+LDFLAGS = -pthread
 
-# Compiler flags
-CXXFLAGS = -std=c++11 -Wall
+# Google Test settings
+GTEST_DIR = /path/to/gtest
+GTEST_INC = -isystem $(GTEST_DIR)/include
+GTEST_LIBS = -L$(GTEST_DIR)/lib -lgtest -lgtest_main
 
-# Executable name
-TARGET = zsp01
-
-# Target executable for tests
-TEST_TARGET = tests
+# Build settings
+SRC_DIR = src
+BUILD_DIR = build
+TESTS_DIR = $(SRC_DIR)/tests
+OBJ_DIR = $(BUILD_DIR)/obj
+BIN_DIR = $(BUILD_DIR)/bin
 
 # Source files
-SRC = zsp01_functions.cpp main.cpp
-TESTS = zsp01_tests.cpp
+SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
+TEST_SOURCES = $(wildcard $(TESTS_DIR)/*.cpp)
+OBJECTS = $(SOURCES:$(SRC_DIR)/%.cpp=$(OBJ_DIR)/%.o)
+TEST_OBJECTS = $(TEST_SOURCES:$(TESTS_DIR)/%.cpp=$(OBJ_DIR)/%.o)
 
-# Object files
-OBJ = $(SRC:.cpp=.o)
+# Executable names
+EXEC = $(BIN_DIR)/my_program
+TEST_EXEC = $(BIN_DIR)/tests
 
-# Build target
-$(TARGET): $(OBJ)
-	$(CXX) $(CXXFLAGS) -o $@ $^
+.PHONY: all clean run tests
 
-# Compile source files
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c -o $@ $<
+all: $(EXEC) $(TEST_EXEC)
 
-$(TEST_TARGET) : $(TESTS)
-	$(CXX) $(CXXFLAGS) -pthread zsp01_functions.o $(TESTS) -lgtest -o $@
+$(EXEC): $(OBJECTS)
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
-# Clean up
+$(TEST_EXEC): $(filter-out $(OBJ_DIR)/main.o, $(OBJECTS)) $(TEST_OBJECTS)
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(GTEST_INC) $^ -o $@ $(GTEST_LIBS) $(LDFLAGS)
+
+$(OBJ_DIR)/%.o: $(SRC_DIR)/%.cpp
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) -c $< -o $@
+
+$(OBJ_DIR)/%.o: $(TESTS_DIR)/%.cpp
+	@mkdir -p $(@D)
+	$(CXX) $(CXXFLAGS) $(GTEST_INC) -c $< -o $@
+
+run: $(EXEC)
+	@./$(EXEC)
+
+tests: $(TEST_EXEC)
+	@./$(TEST_EXEC)
+
 clean:
-	rm -f $(OBJ) $(TARGET)
-	rm -f $(TEST_TARGET) *.o
-
-.PHONY: clean
+	@rm -rf $(BUILD_DIR)
 
 # End of Makefile
