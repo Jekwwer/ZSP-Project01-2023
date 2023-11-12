@@ -1,10 +1,12 @@
-# **ZSP-Project01-2023**
+# **ZSP-Project01-2023:**
 
-> **University**: [VŠPJ](https://en.vspj.cz/school/welcome)
+### Simple I/O Programs Implementation
+
+> 🎓 **University**: [VŠPJ](https://en.vspj.cz/school/welcome)
 >
-> **Subject**: [ZSP (Fundamentals of Structural Programming)](https://www.vspj.cz/eprihlaska/rozcestnik/detail-oboru/obor/aplikovana-informatika/tab/studijni-plany/plan/66/predmet/500067#tabs)
+> 📚 **Subject**: [Fundamentals of Structural Programming (ZSP)](https://www.vspj.cz/eprihlaska/rozcestnik/detail-oboru/obor/aplikovana-informatika/tab/studijni-plany/plan/66/predmet/500067#tabs)
 >
-> **Academic Year**: 2023/24
+> 📅**Academic Year**: 2023/24
 
 ---
 
