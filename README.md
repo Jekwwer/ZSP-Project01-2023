@@ -96,4 +96,11 @@ Total: 5 x 24.9 = 124.5 CZK Rounded: 125 CZK
 
 ## 📊 **Evaluation Results**
 
-TBA (To be Announced)
+| Note                                                                                | Status                                                                                   |            |
+| ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------: |
+| U1_1 OK                                                                             |                                                                                          |            |
+| U1_2 OK                                                                             |                                                                                          |            |
+| U1_3 OK                                                                             |                                                                                          |            |
+| User-unfriendly,<br />lacks instructions on what the user should do.<br/>(-1 point) | Specs lacked explicit requirements.<br/>Evaluator credited +1 point back.<br/>(+1 point) |
+| **Total Points:**                                                                   |                                                                                          |  **12/12** |
+|                                                                                     |                                                                                          | 🟢🟢🟢🟢🟢 |
