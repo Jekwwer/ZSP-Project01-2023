@@ -1,34 +1,77 @@
 ﻿/**
  * @file functions.cpp
- * @brief Implementation for ZSP VŠPJ 1st Homework Assignment.
+ * @brief Implementation of functions for ZSP VŠPJ 1st Homework Assignment.
+ * @details This file provides the detailed implementation of various functions required
+ *          for the completion of the first homework assignment in the ZSP VŠPJ course.
+ *          It includes functions for calculating prices with VAT, processing student grades,
+ *          and performing currency conversions. Each function is tailored to specific
+ *          requirements outlined in the assignment, demonstrating fundamental programming
+ *          concepts in C.
  *
- * This source file contains the implementation of functions and methods required
- * to complete the 1st homework assignment in the ZSP VŠPJ (Fundamentals of Structural Programming) course.
+ *          Examples:
+ *          - A function for calculating prices with VAT includes user input handling and
+ *            arithmetic operations to determine final prices.
+ *          - The grade processing function demonstrates array usage and conditional logic
+ *            to categorize student performance.
+ *          - Currency conversion function uses basic input/output operations and arithmetic
+ *            to provide the monetary conversion.
  *
- * This file is NOT part of the submitted solution.
- * It's meant only for debugging and testing purposes.
+ *          These implementations are foundational examples of using C for solving
+ *          real-world problems in a structured manner.
  *
- * @see https://github.com/Jekwwer/ZSP-Project01-2023
+ * @note This file is part of the educational coursework and is not intended for
+ *       production use. It is structured to provide clear examples of basic C functionality.
+ *
+ * @code
+ * // Example usage of a function
+ * int main() {
+ *     u1_1(); // Function call for calculating prices with VAT
+ *     return 0;
+ * }
+ * @endcode
+ *
+ * @see functions.h for the declaration of these functions.
+ * 
+ * @see https://github.com/Jekwwer/ZSP-Project01-2023 for more details about the project.
  *
  * @author Evgenii Shiliaev
- * @date October 29, 2023
+ * @date October 29, 2023 (Creation)
+ *       November 13, 2023 (Comment enhancements)
  */
 
 #include "functions.h"
 
 /**
- * @brief Function for Task u1.1.
+ * @brief Calculates purchase prices with and without VAT.
  *
- * Task 1 (u1_1)
- * Calculate purchase price (with and without VAT) based on user input.
- * Input: Number of pieces (integer) and the price per piece (integer)
- * Output: Display item price, total without VAT, and total with VAT
- *         (integer rounded according to mathematical rules).
+ * @details This function takes the number of items and price per item as input and calculates
+ *          the total cost both with and without VAT. The VAT rate is set at 20%. It's designed to
+ *          demonstrate basic arithmetic operations and input handling in C.
  *
- * VAT  = 20%. (const)
+ *          Example:
+ *          If the user inputs 5 items each costing 100 units, the function will output
+ *          500 units as the total without VAT and 600 units as the total with VAT.
  *
- * @return nothing
+ * @pre The function expects non-negative integer values for 'count' and 'price'.
+ *
+ * @post Outputs the total price without VAT and with VAT to the standard output.
+ *
+ * @note This function is primarily used for educational purposes to illustrate basic
+ *       C functionalities like arithmetic operations and input/output.
+ *
+ * @code
+ * int main() {
+ *     u1_1(); // Function call for calculating prices with VAT
+ *     return 0;
+ * }
+ * @endcode
+ *
+ * @todo Refine the rounding logic for VAT calculation to handle edge cases.
+ *
+ * @warning Ensure that the input values for 'count' and 'price' are non-negative to avoid
+ *          incorrect calculations.
  */
+
 void u1_1()
 {
     const double VAT = 1.2;
@@ -53,15 +96,36 @@ void u1_1()
 }
 
 /**
- * @brief Function for Task u1.2.
+ * @brief Processes student grades and determines grade status.
  *
- * Task 2 (u1_2)
- * User inputs 5 grades.
- * Calculate average and grade status (pass with distinction, pass, fail).
- * Output: Display marks, average, and grade status.
+ * @details This function takes five student grades as input and calculates the average grade.
+ *          It then determines the grade status based on predefined criteria: pass with distinction
+ *          (average <= 1.50), pass (average <= 4.00), or fail (average > 4.00). It's designed to
+ *          demonstrate array handling, conditional logic, and basic mathematical operations in C.
  *
- * @return nothing
+ *          Example:
+ *          If the user inputs grades 2, 3, 2, 1, and 2, the function will calculate the average
+ *          as 2.0, and determine that the student has passed but without distinction.
+ *
+ * @pre The function expects five integer input values between 1 (best grade) and 5 (worst grade).
+ *
+ * @post Outputs the individual grades, calculated average, and grade status to the standard output.
+ *
+ * @note This function is primarily used for educational purposes to illustrate the handling of arrays,
+ *       basic user input, and conditional statements in C.
+ *
+ * @code
+ * int main() {
+ *     u1_2(); // Function call for processing student grades
+ *     return 0;
+ * }
+ * @endcode
+ *
+ * @todo Implement input validation to ensure grades are within the specified range.
+ *
+ * @warning Incorrect input (grades outside the range 1-5) can lead to erroneous calculations and status determination.
  */
+
 void u1_2()
 {
     const int BEST_GRADE = 1;
@@ -119,14 +183,35 @@ void u1_2()
 }
 
 /**
- * @brief Function for Task u1.3.
+ * @brief Converts a given amount of foreign currency into Czech Koruna (CZK) based on user input.
  *
- * Task 3 (u1_3)
- * User inputs currency abbreviation, rate in CZK, and quantity.
- * Calculate foreign currency's CZK value.
- * Output: Display conversion rate, purchase amount, and total in CZK (rounded).
+ * @details This function prompts the user to input a currency abbreviation (e.g., USD, EUR), the exchange rate
+ *          against the CZK, and the amount of foreign currency to be converted. It then calculates and displays
+ *          the total value in CZK, rounding to the nearest integer. This function serves as a practical example
+ *          of handling user input, performing arithmetic calculations, and rounding results in C++.
  *
- * @return nothing
+ *          Example:
+ *          If the user inputs 'USD', an exchange rate of 22.5, and an amount of 100, the function calculates
+ *          the total as 2250 CZK (assuming no decimal fractions).
+ *
+ * @pre The function expects the user to enter valid and realistic data for currency conversion.
+ *
+ * @post The function outputs the equivalent amount in CZK, based on the user-inputted exchange rate and amount.
+ *
+ * @note This function can be adapted to include more sophisticated currency conversion features, such as handling
+ *       different decimal precisions or supporting a wider range of currencies.
+ *
+ * @code
+ * int main() {
+ *     u1_3(); // Function call for currency conversion
+ *     return 0;
+ * }
+ * @endcode
+ *
+ * @todo Implement a feature to fetch real-time exchange rates from a financial API for more accurate conversions.
+ *
+ * @warning Incorrect or unrealistic user input values can lead to erroneous conversion results. Always ensure
+ *          the inputs are realistic and valid.
  */
 void u1_3()
 {
@@ -151,4 +236,4 @@ void u1_3()
            rounded_result);
 }
 
-/** End of zsp01_functions.cpp */
+/** End of functions.cpp */
