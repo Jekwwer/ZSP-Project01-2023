@@ -14,7 +14,7 @@
 
 ---
 
-### 📌 **Task 1**: Calculate the Purchase Price for Purchased Goods (Function: `u1_1`)
+### 📌 **Task 1**: Calculate the Purchase Price for Purchased Goods (Function: [`u1_1`](submitted-files/ZSP_Ukol-1.cpp#L31))
 
 **Description**:  
 Upon entering the number of pieces and the unit price (excluding VAT) via keyboard, the program will compute:
@@ -41,7 +41,7 @@ Number of pieces: 5<tab>Price without VAT 1000 CZK<tab>Price with VAT (20%) 1400
 
 ---
 
-### 📌 **Task 2**: Calculate Report Card Grades (Function: `u1_2`)
+### 📌 **Task 2**: Calculate Report Card Grades (Function: [`u1_2`](submitted-files/ZSP_Ukol-1.cpp#L64))
 
 **Description**:  
 Upon entering 5 grades via keyboard, the program will determine the average of the grades and categorize the grade as either: pass with distinction, pass, or fail.
@@ -71,7 +71,7 @@ Fail: {1:Yes/0:No}
 
 ---
 
-### 📌 **Task 3**: Currency Exchange Program (Function: `u1_3`)
+### 📌 **Task 3**: Currency Exchange Program (Function: [`u1_3`](submitted-files/ZSP_Ukol-1.cpp#L130))
 
 **Description**:  
 Users will input a currency code (e.g., EUR, GBL, etc.) and the equivalent value of that currency in CZK. Subsequently, the number of currency units to be exchanged will be input. The program will then calculate and display the total cost in CZK for the foreign currency exchanged.
