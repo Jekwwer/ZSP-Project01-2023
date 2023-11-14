@@ -1,0 +1,19 @@
+<map id="u1_2" name="u1_2">
+<area shape="rect" id="Node000001" title="Processes student grades and determines grade status." alt="" coords="108,179,157,204"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function of the application." alt="" coords="8,5,57,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="119,165,94,107,58,44,48,33,52,30,62,41,99,105,124,163"/>
+<area shape="rect" id="Node000003" href="$tests_8cpp.html#ad9fc52247281da1396b6063f8294314d" title="Test processing student grades that are on the border of failing." alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="113,167,58,93,47,83,51,79,62,90,117,164"/>
+<area shape="rect" id="Node000004" href="$tests_8cpp.html#a93c0f4916b52f431f09f75c346d1b2db" title="Test processing student grades that are on the border of passing." alt="" coords="5,104,60,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="100,171,49,132,53,128,103,167"/>
+<area shape="rect" id="Node000005" href="$tests_8cpp.html#a8acca70ae9c7520a8cb9a8a503c14249" title="Test processing student grades with failing scores." alt="" coords="5,153,60,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="92,184,60,176,61,170,93,179"/>
+<area shape="rect" id="Node000006" href="$tests_8cpp.html#ac140329d416f9fcb942501a5fc13050e" title="Test processing student grades that almost pass with distinction." alt="" coords="5,203,60,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="93,204,61,212,60,206,92,198"/>
+<area shape="rect" id="Node000007" href="$tests_8cpp.html#a803a1df1ce6f3396fbddb51b02a58f34" title="Test processing student grades that almost pass." alt="" coords="5,252,60,278"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="103,216,53,254,50,249,99,212"/>
+<area shape="rect" id="Node000008" href="$tests_8cpp.html#abeccaa294186c56d1588c1b5441021ca" title="Test processing student grades for perfect scores." alt="" coords="5,301,60,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="116,219,62,292,51,303,47,299,58,288,112,216"/>
+<area shape="rect" id="Node000009" href="$tests_8cpp.html#a04392fce8b9c8f16d98a33626f4a405a" title="Test processing student grades with scores for distinction." alt="" coords="5,351,60,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="124,220,99,278,62,341,52,352,48,348,58,338,94,275,119,218"/>
+</map>

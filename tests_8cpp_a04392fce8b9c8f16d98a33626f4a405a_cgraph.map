@@ -1,0 +1,7 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="Node000001" title="Test processing student grades with scores for distinction." alt="" coords="5,31,60,56"/>
+<area shape="rect" id="Node000002" href="$tests_8cpp.html#af76042d10e82a119cc3419a83b717504" title="Executes a test for a specified function using simulated input and captures the output." alt="" coords="108,5,297,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,37,97,31,98,37,61,42"/>
+<area shape="rect" id="Node000003" href="$functions_8cpp.html#adafd7ef489fba39e0b19aa86ddad4e30" title="Processes student grades and determines grade status." alt="" coords="178,55,227,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="61,45,163,59,162,65,60,50"/>
+</map>

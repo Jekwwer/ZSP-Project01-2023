@@ -1,0 +1,53 @@
+<map id="u1_1" name="u1_1">
+<area shape="rect" id="Node000001" title="Calculates and displays prices with VAT." alt="" coords="108,597,157,623"/>
+<area shape="rect" id="Node000002" href="$main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title="Main function of the application." alt="" coords="8,5,57,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,582,122,469,109,310,88,153,74,90,57,43,49,33,54,30,62,41,79,88,94,152,114,310,127,468,133,582"/>
+<area shape="rect" id="Node000003" href="$tests_8cpp.html#a98ca68b1365fd79e94eb59ed96399307" title="Tests VAT calculation for a sample scenario." alt="" coords="5,55,60,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,582,120,478,107,334,86,192,73,134,57,93,49,82,54,79,62,90,78,133,92,191,112,333,126,477,132,582"/>
+<area shape="rect" id="Node000004" href="$tests_8cpp.html#a30ce1a063c241f132ca596c5acbfbcf5" title="Test VAT calculation for 101 items at 43 each." alt="" coords="5,104,60,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="126,582,119,486,105,357,84,230,72,179,57,142,49,132,54,129,62,140,77,178,90,229,110,357,124,486,132,582"/>
+<area shape="rect" id="Node000005" href="$tests_8cpp.html#a1a7b1c110a25f1e07b7ef5c197b2e8af" title="Test VAT calculation for 10 items at 50 each." alt="" coords="5,153,60,179"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="126,582,103,381,82,269,70,224,57,191,49,181,54,178,62,189,75,222,88,268,108,380,131,581"/>
+<area shape="rect" id="Node000006" href="$tests_8cpp.html#ac68a13840a9620e093e590827091393a" title="Test VAT calculation for 15 items at 10 each." alt="" coords="5,203,60,228"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="129,582,126,517,117,430,95,333,79,286,57,241,49,231,53,227,62,238,83,284,100,332,122,429,132,517,134,582"/>
+<area shape="rect" id="Node000007" href="$tests_8cpp.html#afa521a7446fc66da2cc144b9479d6387" title="Test VAT calculation for 17 items at 13 each." alt="" coords="5,252,60,278"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="128,582,123,525,112,450,91,368,76,328,57,290,49,280,53,277,62,287,81,326,96,367,117,449,129,525,133,581"/>
+<area shape="rect" id="Node000008" href="$tests_8cpp.html#a0755e32016223095520928c6ad73d74f" title="Test VAT calculation for 1 item at 1." alt="" coords="5,301,60,327"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="126,582,120,533,108,471,87,403,57,340,49,329,53,325,62,337,92,402,113,470,125,532,131,581"/>
+<area shape="rect" id="Node000009" href="$tests_8cpp.html#a7466529476d16f9dfbbaf707b1c00cfa" title="Test VAT calculation for 1 item at 500." alt="" coords="5,351,60,376"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="124,583,103,493,84,439,57,389,48,378,53,375,62,386,88,437,108,491,129,582"/>
+<area shape="rect" id="Node000010" href="$tests_8cpp.html#a3d7ec5f2819fd4709d4247217fb2dd43" title="Test VAT calculation for 20 items at 300 each." alt="" coords="5,400,60,426"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="121,584,97,515,79,475,58,438,48,428,52,424,62,435,84,473,102,513,126,582"/>
+<area shape="rect" id="Node000011" href="$tests_8cpp.html#afafd2e0bdb4f7e24d8fa34212d90648f" title="Test VAT calculation for 29 items at 19 each." alt="" coords="5,449,60,475"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="116,584,91,538,58,488,47,477,51,473,62,485,96,535,121,582"/>
+<area shape="rect" id="Node000012" href="$tests_8cpp.html#ac6ef98cbf6d7ccaeed9c0b4d62a3c992" title="Test VAT calculation for 2 items at 150 each." alt="" coords="5,499,60,524"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="107,588,58,537,46,526,50,523,62,534,110,584"/>
+<area shape="rect" id="Node000013" href="$tests_8cpp.html#a33374beabc39531781c64c49a62448ae" title="Test VAT calculation for 3 items at 200 each." alt="" coords="5,548,60,574"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="93,594,59,577,61,572,95,589"/>
+<area shape="rect" id="Node000014" href="$tests_8cpp.html#a45cda6cc53c1d974bc36ad9e30cacec8" title="Test VAT calculation for 3 items at 7 each." alt="" coords="5,597,60,623"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="92,613,60,613,60,608,92,608"/>
+<area shape="rect" id="Node000015" href="$tests_8cpp.html#a85e31f2e33c8f13a1fc44488f1027a18" title="Test VAT calculation for 47 items at 31 each." alt="" coords="5,647,60,672"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="95,631,61,648,59,644,93,627"/>
+<area shape="rect" id="Node000016" href="$tests_8cpp.html#ad613524706732c59a8a02ad9f3c01e5e" title="Test VAT calculation for 4 items at 25 each." alt="" coords="5,696,60,722"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="110,636,62,687,50,698,46,694,58,683,107,633"/>
+<area shape="rect" id="Node000017" href="$tests_8cpp.html#adc219db3b96601910aef40e2f797afc1" title="Test VAT calculation for 50 items at 25 each." alt="" coords="5,745,60,771"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="121,639,96,685,62,736,51,747,47,743,58,733,91,683,116,636"/>
+<area shape="rect" id="Node000018" href="$tests_8cpp.html#af6055a16169994cd1315cc88eb580acb" title="Test VAT calculation for 59 items at 41 each." alt="" coords="5,795,60,820"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="126,638,102,707,84,747,62,785,52,796,48,793,58,782,79,745,97,706,121,637"/>
+<area shape="rect" id="Node000019" href="$tests_8cpp.html#a0751ce174aef7891f623c3ea0d1bb2e5" title="Test VAT calculation for 5 items at 5 each." alt="" coords="5,844,60,870"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="129,638,108,729,88,783,62,834,53,845,48,842,57,831,84,781,103,727,124,637"/>
+<area shape="rect" id="Node000020" href="$tests_8cpp.html#ab1d4b7d84751c0328fc4d8020d027bb0" title="Test VAT calculation for 67 items at 23 each." alt="" coords="5,893,60,919"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="131,639,125,688,113,751,92,819,62,884,53,895,49,891,57,881,87,817,108,749,120,687,126,638"/>
+<area shape="rect" id="Node000021" href="$tests_8cpp.html#a738c8e1c63429b65bf0eabb98fccbff4" title="Test VAT calculation for 79 items at 37 each." alt="" coords="5,943,60,968"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="133,639,129,696,117,771,96,854,81,894,62,933,53,944,49,940,57,930,76,892,91,852,112,770,123,695,128,638"/>
+<area shape="rect" id="Node000022" href="$tests_8cpp.html#ad3d310a940a82461aa85eabb61b4ec6b" title="Test VAT calculation for 7 items at 70 each." alt="" coords="5,992,60,1018"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="134,639,132,703,122,791,100,889,83,937,62,982,53,993,49,990,57,979,79,935,95,887,117,791,126,703,129,639"/>
+<area shape="rect" id="Node000023" href="$tests_8cpp.html#a4d50fb68c55aebc0b68a31dc0c7dc1cb" title="Test VAT calculation for 89 items at 53 each." alt="" coords="5,1041,60,1067"/>
+<area shape="poly" id="edge22_Node000001_Node000023" title=" " alt="" coords="131,639,108,840,88,952,75,998,62,1031,54,1042,49,1039,57,1029,70,996,82,951,103,840,126,638"/>
+<area shape="rect" id="Node000024" href="$tests_8cpp.html#af56115fe95c6ea174776c9e913f659c7" title="Test VAT calculation for 97 items at 29 each." alt="" coords="5,1091,60,1116"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="132,639,124,734,110,864,90,991,77,1043,62,1081,54,1092,49,1089,57,1078,72,1041,84,990,105,863,119,734,126,638"/>
+<area shape="rect" id="Node000025" href="$tests_8cpp.html#a97670fbdd95ed40e13cada2722db70f6" title="Tests VAT calculation for a single item." alt="" coords="5,1140,60,1166"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="132,639,126,743,112,887,92,1029,78,1087,62,1130,54,1141,49,1138,57,1128,73,1086,86,1028,107,886,120,743,127,638"/>
+<area shape="rect" id="Node000026" href="$tests_8cpp.html#a6b2734d0a96092f14035440344235fd2" title="Tests VAT calculation with zero items." alt="" coords="5,1189,60,1215"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="133,639,127,752,114,910,94,1068,79,1132,62,1179,54,1190,49,1187,57,1177,74,1131,88,1067,109,910,122,752,127,638"/>
+</map>

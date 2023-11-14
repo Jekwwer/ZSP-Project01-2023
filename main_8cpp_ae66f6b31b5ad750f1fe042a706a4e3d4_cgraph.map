@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function of the application." alt="" coords="5,55,55,80"/>
+<area shape="rect" id="Node000002" href="$functions_8cpp.html#abe4c78ba7d348a0b3627fd494ce46441" title="Calculates purchase prices with and without VAT." alt="" coords="103,5,152,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="54,53,88,35,90,40,56,57"/>
+<area shape="rect" id="Node000003" href="$functions_8cpp.html#adafd7ef489fba39e0b19aa86ddad4e30" title="Processes student grades and determines grade status." alt="" coords="103,55,152,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="55,65,87,65,87,70,55,70"/>
+<area shape="rect" id="Node000004" href="$functions_8cpp.html#a37addaa514d766740001e5bdb5c7bb14" title="Converts a given amount of foreign currency into Czech Koruna (CZK) based on user input." alt="" coords="103,104,152,130"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="56,78,90,95,88,100,54,82"/>
+</map>
