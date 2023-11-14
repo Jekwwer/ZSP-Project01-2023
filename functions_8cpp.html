@@ -117,7 +117,7 @@ Functions</h2></td></tr>
 <div class="line">    <a class="code hl_function" href="functions_8cpp.html#abe4c78ba7d348a0b3627fd494ce46441">u1_1</a>(); <span class="comment">// Function call for calculating prices with VAT</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="afunctions_8cpp_html_abe4c78ba7d348a0b3627fd494ce46441"><div class="ttname"><a href="functions_8cpp.html#abe4c78ba7d348a0b3627fd494ce46441">u1_1</a></div><div class="ttdeci">void u1_1()</div><div class="ttdoc">Calculates purchase prices with and without VAT.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00078">functions.cpp:78</a></div></div>
+<div class="ttc" id="afunctions_8cpp_html_abe4c78ba7d348a0b3627fd494ce46441"><div class="ttname"><a href="functions_8cpp.html#abe4c78ba7d348a0b3627fd494ce46441">u1_1</a></div><div class="ttdeci">void u1_1()</div><div class="ttdoc">Calculates purchase prices with and without VAT.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00075">functions.cpp:75</a></div></div>
 <div class="ttc" id="amain_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdoc">Main function of the application.</div><div class="ttdef"><b>Definition</b> <a href="main_8cpp_source.html#l00041">main.cpp:41</a></div></div>
 </div><!-- fragment --><dl class="section see"><dt>See also</dt><dd><a class="el" href="functions_8h.html" title="Function Declarations for ZSP VŠPJ 1st Homework Assignment.">functions.h</a> for the declaration of these functions.</dd>
 <dd>
@@ -146,13 +146,6 @@ Functions</h2></td></tr>
 <p>Calculates and displays prices with VAT.</p>
 <p>This function takes the number of items and price per item as input and calculates the total cost both with and without VAT. The VAT rate is set at 20%. It's designed to demonstrate basic arithmetic operations and input handling in C.</p>
 <p>Example: If the user inputs 5 items each costing 100 units, the function will output 500 units as the total without VAT and 600 units as the total with VAT.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">count</td><td>The number of items to be purchased (as an integer). </td></tr>
-    <tr><td class="paramname">price</td><td>The price per item (as an integer).</td></tr>
-  </table>
-  </dd>
-</dl>
 <dl class="section pre"><dt>Precondition</dt><dd>The function expects non-negative integer values for 'count' and 'price'.</dd></dl>
 <dl class="section post"><dt>Postcondition</dt><dd>Outputs the total price without VAT and with VAT to the standard output.</dd></dl>
 <dl class="section note"><dt>Note</dt><dd>This function is primarily used for educational purposes to illustrate basic C functionalities like arithmetic operations and input/output.</dd></dl>
@@ -163,7 +156,7 @@ Functions</h2></td></tr>
 </div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Refine the rounding logic for VAT calculation to handle edge cases.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Ensure that the input values for 'count' and 'price' are non-negative to avoid incorrect calculations. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00078">78</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00075">75</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -197,11 +190,11 @@ Here is the caller graph for this function:</div>
 <div class="line">    <a class="code hl_function" href="functions_8cpp.html#adafd7ef489fba39e0b19aa86ddad4e30">u1_2</a>(); <span class="comment">// Function call for processing student grades</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="afunctions_8cpp_html_adafd7ef489fba39e0b19aa86ddad4e30"><div class="ttname"><a href="functions_8cpp.html#adafd7ef489fba39e0b19aa86ddad4e30">u1_2</a></div><div class="ttdeci">void u1_2()</div><div class="ttdoc">Processes student grades and determines grade status.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00132">functions.cpp:132</a></div></div>
+<div class="ttc" id="afunctions_8cpp_html_adafd7ef489fba39e0b19aa86ddad4e30"><div class="ttname"><a href="functions_8cpp.html#adafd7ef489fba39e0b19aa86ddad4e30">u1_2</a></div><div class="ttdeci">void u1_2()</div><div class="ttdoc">Processes student grades and determines grade status.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00129">functions.cpp:129</a></div></div>
 </div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000002">Todo:</a></b></dt><dd>Implement input validation to ensure grades are within the specified range.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Incorrect input (grades outside the range 1-5) can lead to erroneous calculations and status determination. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00132">132</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00129">129</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -236,11 +229,11 @@ Here is the caller graph for this function:</div>
 <div class="line">    <a class="code hl_function" href="functions_8cpp.html#a37addaa514d766740001e5bdb5c7bb14">u1_3</a>(); <span class="comment">// Function call for currency conversion</span></div>
 <div class="line">    <span class="keywordflow">return</span> 0;</div>
 <div class="line">}</div>
-<div class="ttc" id="afunctions_8cpp_html_a37addaa514d766740001e5bdb5c7bb14"><div class="ttname"><a href="functions_8cpp.html#a37addaa514d766740001e5bdb5c7bb14">u1_3</a></div><div class="ttdeci">void u1_3()</div><div class="ttdoc">Converts a given amount of foreign currency into Czech Koruna (CZK) based on user input.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00219">functions.cpp:219</a></div></div>
+<div class="ttc" id="afunctions_8cpp_html_a37addaa514d766740001e5bdb5c7bb14"><div class="ttname"><a href="functions_8cpp.html#a37addaa514d766740001e5bdb5c7bb14">u1_3</a></div><div class="ttdeci">void u1_3()</div><div class="ttdoc">Converts a given amount of foreign currency into Czech Koruna (CZK) based on user input.</div><div class="ttdef"><b>Definition</b> <a href="functions_8cpp_source.html#l00216">functions.cpp:216</a></div></div>
 </div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000003">Todo:</a></b></dt><dd>Implement a feature to fetch real-time exchange rates from a financial API for more accurate conversions.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Incorrect or unrealistic user input values can lead to erroneous conversion results. Always ensure the inputs are realistic and valid. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00219">219</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="functions_8cpp_source.html#l00216">216</a> of file <a class="el" href="functions_8cpp_source.html">functions.cpp</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -252,7 +245,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Nov 14 2023 12:48:45 for ZSP VŠPJ 1st Homework Assignment by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+Generated on Tue Nov 14 2023 12:55:52 for ZSP VŠPJ 1st Homework Assignment by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
 </small></address>
 </body>
 </html>
