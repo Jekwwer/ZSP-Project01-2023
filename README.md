@@ -1,106 +1,195 @@
-# **ZSP-Project01-2023:**
+﻿<h1>Simple I/O Programs Implementation</h1>
 
-### Simple I/O Programs Implementation
+<blockquote>
+  <p>
+    🎓 <strong>University</strong>:
+    <a href="https://en.vspj.cz/school/welcome">VŠPJ</a>
+  </p>
 
-> 🎓 **University**: [VŠPJ](https://en.vspj.cz/school/welcome)
->
-> 📚 **Subject**: [Fundamentals of Structural Programming (ZSP)](https://www.vspj.cz/eprihlaska/rozcestnik/detail-oboru/obor/aplikovana-informatika/tab/studijni-plany/plan/66/predmet/500067#tabs)
->
-> 📅**Academic Year**: 2023/24
+  <p>
+    📚 <strong>Subject</strong>:
+    <a
+      href="https://www.vspj.cz/eprihlaska/rozcestnik/detail-oboru/obor/aplikovana-informatika/tab/studijni-plany/plan/66/predmet/500067#tabs"
+      >Fundamentals of Structural Programming (ZSP)</a
+    >
+  </p>
 
----
+  <p>📅<strong>Academic Year</strong>: 2023/24</p>
+</blockquote>
 
-## 📋 **Assignment Overview - [ZSP_Task-1.cpp](submitted-files/ZSP_Ukol-1.cpp)**
+<hr />
 
----
+<h2>📋 <strong>Assignment Overview</strong></h2>
 
-### 📌 **Task 1**: Calculate the Purchase Price for Purchased Goods (Function: [`u1_1`](submitted-files/ZSP_Ukol-1.cpp#L31))
+<hr />
 
-**Description**:  
-Upon entering the number of pieces and the unit price (excluding VAT) via keyboard, the program will compute:
+<h3>
+  📌 <strong>Task 1</strong>: Calculate the Purchase Price for Purchased Goods
+  (Function:
+  <a
+    href="https://github.com/Jekwwer/ZSP-Homework01-2023/blob/bd06198be6283c0e97a7924f60b702b1e01a2b22/src/functions.cpp#L78"
+    ><code>u1_1</code></a
+  >)
+</h3>
 
-- Unit price inclusive of VAT (rounded as per mathematical rules).
-- Total price excluding VAT.
-- Aggregate price inclusive of VAT (rounded as per mathematical rules).
+<p>
+  <strong>Description</strong>: <br />
+  Upon entering the number of pieces and the unit price (excluding VAT) via
+  keyboard, the program will compute:
+</p>
 
-**Sample Output:**
+<ul>
+  <li>Unit price inclusive of VAT (rounded as per mathematical rules).</li>
+  <li>Total price excluding VAT.</li>
+  <li>Aggregate price inclusive of VAT (rounded as per mathematical rules).</li>
+</ul>
 
-```
-Účtenka
-Cena bez DPH/ks 200 Kč<tab>Cena s DPH/ks 240 Kč
-Počet kusů: 5<tab>Cena bez DPH 1000 Kč<tab>Cena s DPH (20 %) 1400 Kč
-```
+<p>
+  <strong>Sample Output:</strong><br />
+  <code>
+    Účtenka<br />
+    Cena bez DPH/ks 200 Kč&lt;tab&gt;Cena s DPH/ks 240 Kč<br />
+    Počet kusů: 5&lt;tab&gt;Cena bez DPH 1000 Kč&lt;tab&gt;Cena s DPH (20 %)
+    1400 Kč
+  </code>
+</p>
 
-**Translated Sample Output**:
+<p>
+  <strong>Translated Sample Output</strong>:<br />
+  <code>
+    Receipt<br />
+    Price without VAT/pc 200 CZK&lt;tab&gt;Price with VAT/pc 240 CZK<br />
+    Number of pieces: 5&lt;tab&gt;Price without VAT 1000 CZK&lt;tab&gt;Price
+    with VAT (20%) 1400 CZK
+  </code>
+</p>
 
-```
-Receipt
-Price without VAT/pc 200 CZK<tab>Price with VAT/pc 240 CZK
-Number of pieces: 5<tab>Price without VAT 1000 CZK<tab>Price with VAT (20%) 1400 CZK
-```
+<hr />
 
----
+<h3>
+  📌 <strong>Task 2</strong>: Calculate Report Card Grades (Function:
+  <a
+    href="https://github.com/Jekwwer/ZSP-Homework01-2023/blob/bd06198be6283c0e97a7924f60b702b1e01a2b22/src/functions.cpp#L132"
+    ><code>u1_2</code></a
+  >)
+</h3>
 
-### 📌 **Task 2**: Calculate Report Card Grades (Function: [`u1_2`](submitted-files/ZSP_Ukol-1.cpp#L64))
+<p>
+  <strong>Description</strong>: <br />
+  Upon entering 5 grades via keyboard, the program will determine the average of
+  the grades and categorize the grade as either: pass with distinction, pass, or
+  fail.
+</p>
 
-**Description**:  
-Upon entering 5 grades via keyboard, the program will determine the average of the grades and categorize the grade as either: pass with distinction, pass, or fail.
+<p>
+  <strong>Note</strong>: <br />
+  Implement a suitable constant variable and define its value within the
+  program.
+</p>
 
-**Note**:  
-Implement a suitable constant variable and define its value within the program.
+<p>
+  <strong>Sample Output</strong>:<br />
+  <code>
+    Známky: z1&lt;tab&gt;z2&lt;z3&gt;&lt;tab&gt;z4&lt;tab&gt;z5<br />
+    [Průměrná hodnota zaokrouhlená na dvě desetinná místa]<br />
+    Prospěl s vyznamenáním: {1:Ano/0:Ne}<br />
+    Prospěl: {1:Ano/0:Ne}<br />
+    Neprospěl: {1:Ano/0:Ne}
+  </code>
+</p>
 
-**Sample Output**:
+<p>
+  <strong>Translated Sample Output</strong>:<br />
+  <code>
+    Marks: z1&lt;tab&gt;z2&lt;z3&gt;&lt;tab&gt;z4&lt;tab&gt;z5<br />
+    [Average value rounded to two decimal places]<br />
+    Pass with distinction: {1:Yes/0:No}<br />
+    Passed: {1:Yes/0:No}<br />
+    Fail: {1:Yes/0:No}
+  </code>
+</p>
 
-```
-Známky: z1<tab>z2<z3><tab>z4<tab>z5
-[Průměrná hodnota zaokrouhlená na dvě desetinná místa]
-Prospěl s vyznamenáním: {1:Ano/0:Ne}
-Prospěl: {1:Ano/0:Ne}
-Neprospěl: {1:Ano/0:Ne}
-```
+<hr />
 
-**Translated Sample Output**:
+<h3>
+  📌 <strong>Task 3</strong>: Currency Exchange Program (Function:
+  <a
+    href="https://github.com/Jekwwer/ZSP-Homework01-2023/blob/bd06198be6283c0e97a7924f60b702b1e01a2b22/src/functions.cpp#L219"
+    ><code>u1_3</code></a
+  >)
+</h3>
 
-```
-Marks: z1<tab>z2<z3><tab>z4<tab>z5
-[Average value rounded to two decimal places]
-Pass with distinction: {1:Yes/0:No}
-Passed: {1:Yes/0:No}
-Fail: {1:Yes/0:No}
-```
+<p>
+  <strong>Description</strong>: <br />
+  Users will input a currency code (e.g., EUR, GBL, etc.) and the equivalent
+  value of that currency in CZK. Subsequently, the number of currency units to
+  be exchanged will be input. The program will then calculate and display the
+  total cost in CZK for the foreign currency exchanged.
+</p>
 
----
+<p>
+  <strong>Sample Output:</strong><br />
+  <code>
+    1 GBP = 24.9 Kč<br />
+    Nákup: 5 GBP<br />
+    Celkem: 5 x 24.9 = 124.5 Kč Zaokrouhleno: 125 Kč
+  </code>
+</p>
 
-### 📌 **Task 3**: Currency Exchange Program (Function: [`u1_3`](submitted-files/ZSP_Ukol-1.cpp#L130))
+<p><strong>Translated Sample Output</strong>:</p>
 
-**Description**:  
-Users will input a currency code (e.g., EUR, GBL, etc.) and the equivalent value of that currency in CZK. Subsequently, the number of currency units to be exchanged will be input. The program will then calculate and display the total cost in CZK for the foreign currency exchanged.
+<p>
+  <code>
+    1 GBP = 24.9 CZK<br />
+    Purchase: 5 GBP<br />
+    Total: 5 x 24.9 = 124.5 CZK Rounded: 125 CZK
+  </code>
+</p>
 
-**Sample Output:**
+<hr />
 
-```
-1 GBP = 24.9 Kč
-Nákup: 5 GBP
-Celkem: 5 x 24.9 = 124.5 Kč Zaokrouhleno: 125 Kč
-```
+<h2>📊 <strong>Evaluation Results</strong></h2>
 
-**Translated Sample Output**:
-
-```
-1 GBP = 24.9 CZK
-Purchase: 5 GBP
-Total: 5 x 24.9 = 124.5 CZK Rounded: 125 CZK
-```
-
----
-
-## 📊 **Evaluation Results**
-
-| Note                                                                                | Status                                                                                   |            |
-| ----------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- | ---------: |
-| U1_1 OK                                                                             |                                                                                          |            |
-| U1_2 OK                                                                             |                                                                                          |            |
-| U1_3 OK                                                                             |                                                                                          |            |
-| User-unfriendly,<br />lacks instructions on what the user should do.<br/>(-1 point) | Specs lacked explicit requirements.<br/>Evaluator credited +1 point back.<br/>(+1 point) |
-| **Total Points:**                                                                   |                                                                                          |  **12/12** |
-|                                                                                     |                                                                                          | 🟢🟢🟢🟢🟢 |
+<table>
+  <tr>
+    <th>Note</th>
+    <th>Status</th>
+    <th style="text-align: right"></th>
+  </tr>
+  <tr>
+    <td>U1_1 OK</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>U1_2 OK</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>U1_3 OK</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      User-unfriendly,<br />lacks instructions on what the user should do.<br />(-1
+      point)
+    </td>
+    <td>
+      Specs lacked explicit requirements.<br />Evaluator credited +1 point
+      back.<br />(+1 point)
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><strong>Total Points:</strong></td>
+    <td></td>
+    <td style="text-align: right"><strong>12/12</strong></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td style="text-align: right">🟢🟢🟢🟢🟢</td>
+  </tr>
+</table>
