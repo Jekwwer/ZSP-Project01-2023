@@ -1,0 +1,27 @@
+name: Doxygen Documentation
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Doxygen Action
+      uses: mattnotmitt/doxygen-action@v1.1.0
+      with:
+        # Since the Doxyfile is in the root, no need to specify doxyfile-path
+        doxyfile-path: 'Doxyfile'
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        # Personal access token (PAT) used to build and push to the gh-pages branch
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        # The folder in which the documentation is generated
+        publish_dir: './docs/html'
