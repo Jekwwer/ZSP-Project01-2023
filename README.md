@@ -19,6 +19,8 @@
 
 <hr />
 
+<h4>📖 The full project documentation can be found <a href="https://jekwwer.github.io/ZSP-Project01-2023" target="_blank">here</a>.</h4>
+
 <h2>📋 <strong>Assignment Overview</strong></h2>
 
 <hr />
