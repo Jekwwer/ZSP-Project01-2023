@@ -1,0 +1,25 @@
+name: Code Format Check
+
+on: [push, pull_request]
+
+jobs:
+  clang-format-check:
+    runs-on: ubuntu-latest
+    name: Check C/C++ code formatting
+
+    steps:
+    - uses: actions/checkout@v2
+      name: Checkout code
+
+    - name: Install clang-format
+      run: sudo apt-get install clang-format
+
+    - name: Check formatting with clang-format
+      run: |
+        find . -iname '*.h' -o -iname '*.c' | xargs clang-format -i --dry-run --Werror
+
+    - name: Print diff for formatting errors
+      if: ${{ failure() }}
+      run: |
+        echo "Code formatting differences detected:"
+        git diff
