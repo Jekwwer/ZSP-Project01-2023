@@ -31,7 +31,7 @@
  * @endcode
  *
  * @see functions.h for the declaration of these functions.
- * 
+ *
  * @see https://github.com/Jekwwer/ZSP-Project01-2023 for more details about the project.
  *
  * @author Evgenii Shiliaev

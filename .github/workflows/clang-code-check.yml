@@ -1,25 +1,50 @@
-name: Code Format Check
+name: Format C/C++ Code
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 
 jobs:
-  clang-format-check:
+  clang-format:
     runs-on: ubuntu-latest
-    name: Check C/C++ code formatting
-
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout code
+      - name: Checkout repo
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0 # Necessary to amend changes later
 
-    - name: Install clang-format
-      run: sudo apt-get install clang-format
+      - name: Install clang-format
+        run: sudo apt-get install -y clang-format
 
-    - name: Check formatting with clang-format
-      run: |
-        find . -iname '*.h' -o -iname '*.c' | xargs clang-format -i --dry-run --Werror
+      - name: Run clang-format
+        run: find . -regex '.*\.\(c\|h\|cpp\|hpp\)' | xargs clang-format -i && git diff
 
-    - name: Print diff for formatting errors
-      if: ${{ failure() }}
-      run: |
-        echo "Code formatting differences detected:"
-        git diff
+      - name: Amend changes to the last commit
+        if: github.event_name == 'push'
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit --amend --no-edit
+            git push --force-with-lease origin HEAD
+          fi
+
+      - name: Create a commit for changes
+        if: github.event_name == 'pull_request'
+        run: |
+          git config --global user.name 'github-actions'
+          git config --global user.email 'github-actions@github.com'
+          git add .
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "applied clang-format changes"
+            git push origin HEAD
+          fi
